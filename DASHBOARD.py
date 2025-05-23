@@ -125,7 +125,8 @@ st.markdown('<style>div.block-container{padding-top:0rem !important;padding-bott
 
 @st.cache_resource
 def load_model():
-    return joblib.load(r"c:\Users\bida21-120\Downloads\xgboost.joblib")
+    model_path = os.path.join(os.path.dir("model_path = os.path.join(os.path.dirname(__file__), "xgboost.joblib")
+    return joblib.load(model_path)
 
 model_bundle = load_model()
 xgb_model = model_bundle['model']
