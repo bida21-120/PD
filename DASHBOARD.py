@@ -125,8 +125,10 @@ st.subheader("📊 AI-Solution Analysis Dashboard")
 st.markdown('<style>div.block-container{padding-top:0rem !important;padding-bottom: 1rem;} header, footer {visibility: hidden;} </style>', unsafe_allow_html=True)
 
 @st.cache_resource
-joblib.dump(xgb_model, "xgboost.joblib")
-#def load_model():
+
+def load_model():
+    joblib.dump(xgb_model, "xgboost.joblib")
+
     #script_dir = os.path.dirname(os.path.abspath(__file__))
     #model_path = joblib.load(os.path.join(script_dir, "xgboost.joblib"))
     #return{ "model_path": xgboost.joblib}
