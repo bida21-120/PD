@@ -129,8 +129,6 @@ def load_model():
     return joblib.load(model_path)
 
 model_bundle = load_model()
-xgb_model = model_bundle['model']
-preprocessor = model_bundle['preprocessor']
 
 @st.cache_data
 def load_data():
