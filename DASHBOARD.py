@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import hashlib
 import joblib
+import pickle
 import xgboost as xgb
 import numpy as np
 from plotly.subplots import make_subplots
