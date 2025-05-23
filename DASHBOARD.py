@@ -133,7 +133,7 @@ joblib.dump(xgb_model, "xgboost.joblib")
     #model_path = os.path.join(os.path.dirname(__file__), "xgboost.joblib")
     #return joblib.load(model_path)
 
-model_bundle = load_model()
+#model_bundle = load_model()
 
 @st.cache_data
 def load_data():
